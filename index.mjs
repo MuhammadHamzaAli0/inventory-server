@@ -25,9 +25,9 @@ app.use(
 
 const connection = mysql.createConnection({
   host: "localhost",
-  user: process.env.USER,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE,
+  user: "root",
+  password: "Hamzaali565!", //process.env.PASSWORD
+  database: "hamzadb", //process.env.DATABASE
 });
 const queryPromise = util.promisify(connection.query).bind(connection);
 const SECRET = process.env.SECRET || "topsecret";
